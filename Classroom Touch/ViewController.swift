@@ -1,19 +1,12 @@
-//
-//  ViewController.swift
-//  Classroom Touch
-//
-//  Created by Bas van der Hoek on 21/11/2019.
-//  Copyright © 2019 Zilverline. All rights reserved.
-//
-
 import Cocoa
 
 class ViewController: NSViewController {
+  
+  @IBOutlet weak var wslider: NSSlider!
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    // Do any additional setup after loading the view.
+    wslider.action = #selector(sliderChanged)
   }
 
   override var representedObject: Any? {
@@ -22,6 +15,14 @@ class ViewController: NSViewController {
     }
   }
 
+  @objc func sliderChanged() {
+    print(wslider.doubleValue)
+    if let windowController = self.view.window?.windowController as? WindowController {
+      DispatchQueue.main.async() {
+        windowController.tslider.doubleValue = self.wslider.doubleValue
+      }
+    }
+  }
 
 }
 

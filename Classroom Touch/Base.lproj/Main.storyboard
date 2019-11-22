@@ -719,6 +719,9 @@
                                 <slider key="slider" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WjB-aS-0Vb">
                                     <rect key="frame" x="0.0" y="0.0" width="605" height="30"/>
                                     <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="66Y-xU-MhO"/>
+                                    <connections>
+                                        <binding destination="kks-Na-pkr" name="value" keyPath="values.countDown" id="gFX-qr-oJZ"/>
+                                    </connections>
                                 </slider>
                             </sliderTouchBarItem>
                         </touchBarItems>
@@ -744,7 +747,14 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bN7-27-pkq">
                                 <rect key="frame" x="-2" y="18" width="484" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="ROg-vw-Xlr"/>
+                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="ROg-vw-Xlr"/>
+                                <connections>
+                                    <binding destination="WHa-ss-vsq" name="value" keyPath="values.countDown" id="NQ9-hN-yu3">
+                                        <dictionary key="options">
+                                            <integer key="NSNoSelectionPlaceholder" value="0"/>
+                                        </dictionary>
+                                    </binding>
+                                </connections>
                             </slider>
                         </subviews>
                     </view>
@@ -753,6 +763,7 @@
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController id="WHa-ss-vsq"/>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
         </scene>

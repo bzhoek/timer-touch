@@ -11,11 +11,6 @@ class WindowController: NSWindowController {
   
   @objc func sliderChanged() {
     print(tslider.doubleValue)
-    if let viewController = self.contentViewController as? ViewController {
-      DispatchQueue.main.async() {
-        viewController.wslider.doubleValue = self.tslider.doubleValue
-      }
-    }
   }
   
 }

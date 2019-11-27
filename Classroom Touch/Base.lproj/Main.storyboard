@@ -691,7 +691,7 @@
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="175" width="480" height="335"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -717,16 +717,25 @@
                                     <sliderAccessoryBehavior key="behavior" id="Ru2-ka-bfg"/>
                                 </sliderAccessory>
                                 <slider key="slider" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WjB-aS-0Vb">
-                                    <rect key="frame" x="0.0" y="0.0" width="605" height="30"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="337" height="30"/>
                                     <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="66Y-xU-MhO"/>
                                     <connections>
                                         <binding destination="kks-Na-pkr" name="value" keyPath="values.countDown" id="gFX-qr-oJZ"/>
                                     </connections>
                                 </slider>
                             </sliderTouchBarItem>
+                            <touchBarItem id="TLg-aj-fMH">
+                                <viewController key="viewController" id="h7I-of-Juv">
+                                    <scrubber key="view" mode="1" translatesAutoresizingMaskIntoConstraints="NO" id="2C2-gR-RvD">
+                                        <rect key="frame" x="0.0" y="0.0" width="261" height="30"/>
+                                        <scrubberFlowLayout key="scrubberLayout"/>
+                                    </scrubber>
+                                </viewController>
+                            </touchBarItem>
                         </touchBarItems>
                     </touchBar>
                     <connections>
+                        <outlet property="tscrubber" destination="2C2-gR-RvD" id="C1Z-an-LmO"/>
                         <outlet property="tslider" destination="Gla-hI-Yfq" id="MzO-ph-ufy"/>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
                     </connections>

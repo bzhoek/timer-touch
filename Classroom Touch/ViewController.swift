@@ -3,20 +3,17 @@ import Cocoa
 class ViewController: NSViewController {
   
   @IBOutlet weak var wslider: NSSlider!
-
+  @IBOutlet weak var wlable: NSTextField!
+  
+  var observer: NSKeyValueObservation?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    wslider.action = #selector(sliderChanged)
-  }
-
-  override var representedObject: Any? {
-    didSet {
-    // Update the view, if already loaded.
-    }
-  }
-
-  @objc func sliderChanged() {
-    print(wslider.doubleValue)
+    
+    observer = UserDefaults.standard.observe(\.countDown, options: [.initial, .new], changeHandler: { (defaults, _) in
+        print("v \(defaults.countDown)")
+        self.wlable.stringValue = percentToTimeString(doubleValue: Double(defaults.countDown))
+    })
   }
 
 }

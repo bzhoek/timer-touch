@@ -12,7 +12,7 @@ class WindowController: NSWindowController {
     observer = UserDefaults.standard.observe(\.countDown, options: [.old, .new], changeHandler: { (defaults, _) in
       print("w \(defaults.countDown)")
 
-      self.tbutton.title = percentToTimeString(doubleValue: Double(defaults.countDown))
+      self.tbutton.title = timeAttributedString(percent: defaults.countDown).string
     })
   }
 

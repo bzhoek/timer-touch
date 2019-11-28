@@ -761,10 +761,10 @@
                                 </connections>
                             </slider>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4E8-bX-nbC">
-                                <rect key="frame" x="26" y="64" width="429" height="141"/>
+                                <rect key="frame" x="38" y="65" width="405" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="0:00:00" id="Ncx-fO-M8d">
-                                    <font key="font" metaFont="system" size="120"/>
+                                    <font key="font" size="120" name="HelveticaNeue"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>

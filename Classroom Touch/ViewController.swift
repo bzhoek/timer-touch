@@ -12,7 +12,7 @@ class ViewController: NSViewController {
     
     observer = UserDefaults.standard.observe(\.countDown, options: [.initial, .new], changeHandler: { (defaults, _) in
         print("v \(defaults.countDown)")
-        self.wlable.stringValue = percentToTimeString(doubleValue: Double(defaults.countDown))
+      self.wlable.attributedStringValue = timeAttributedString(percent: defaults.countDown)
     })
   }
 

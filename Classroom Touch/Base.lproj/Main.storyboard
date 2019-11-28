@@ -721,7 +721,7 @@
                                 </sliderAccessory>
                                 <slider key="slider" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WjB-aS-0Vb">
                                     <rect key="frame" x="0.0" y="0.0" width="587" height="30"/>
-                                    <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="66Y-xU-MhO">
+                                    <sliderCell key="cell" continuous="YES" state="on" userInterfaceLayoutDirection="rightToLeft" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="66Y-xU-MhO">
                                         <connections>
                                             <binding destination="eGD-mz-O9D" name="value" keyPath="values.countDown" id="DhG-O6-AbG"/>
                                         </connections>
@@ -755,7 +755,7 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bN7-27-pkq">
                                 <rect key="frame" x="-2" y="18" width="484" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="ROg-vw-Xlr"/>
+                                <sliderCell key="cell" continuous="YES" state="on" userInterfaceLayoutDirection="rightToLeft" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="ROg-vw-Xlr"/>
                                 <connections>
                                     <binding destination="YpP-kr-XcD" name="value" keyPath="values.countDown" id="KdV-db-Jfp"/>
                                 </connections>

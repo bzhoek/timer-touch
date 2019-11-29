@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49AAFD1C239143E000082114 /* SwipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AAFD1B239143E000082114 /* SwipView.swift */; };
+		49AAFD2423914AA900082114 /* Classroom_TouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AAFD2323914AA900082114 /* Classroom_TouchTests.swift */; };
 		49F3C8A82386D5700095BC6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F3C8A72386D5700095BC6F /* AppDelegate.swift */; };
 		49F3C8AA2386D5700095BC6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F3C8A92386D5700095BC6F /* ViewController.swift */; };
 		49F3C8AC2386D5710095BC6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F3C8AB2386D5710095BC6F /* Assets.xcassets */; };
@@ -15,8 +16,21 @@
 		49F3C8B82386D96F0095BC6F /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F3C8B72386D96F0095BC6F /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		49AAFD2623914AA900082114 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49F3C89C2386D5700095BC6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49F3C8A32386D5700095BC6F;
+			remoteInfo = "Classroom Touch";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		49AAFD1B239143E000082114 /* SwipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipView.swift; sourceTree = "<group>"; };
+		49AAFD2123914AA900082114 /* Classroom TouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Classroom TouchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49AAFD2323914AA900082114 /* Classroom_TouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classroom_TouchTests.swift; sourceTree = "<group>"; };
+		49AAFD2523914AA900082114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49F3C8A42386D5700095BC6F /* Classroom Touch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Classroom Touch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F3C8A72386D5700095BC6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49F3C8A92386D5700095BC6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +42,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		49AAFD1E23914AA900082114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49F3C8A12386D5700095BC6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +59,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49AAFD2223914AA900082114 /* Classroom TouchTests */ = {
+			isa = PBXGroup;
+			children = (
+				49AAFD2323914AA900082114 /* Classroom_TouchTests.swift */,
+				49AAFD2523914AA900082114 /* Info.plist */,
+			);
+			path = "Classroom TouchTests";
+			sourceTree = "<group>";
+		};
 		49F3C89B2386D5700095BC6F = {
 			isa = PBXGroup;
 			children = (
 				49F3C8A62386D5700095BC6F /* Classroom Touch */,
+				49AAFD2223914AA900082114 /* Classroom TouchTests */,
 				49F3C8A52386D5700095BC6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				49F3C8A42386D5700095BC6F /* Classroom Touch.app */,
+				49AAFD2123914AA900082114 /* Classroom TouchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +104,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		49AAFD2023914AA900082114 /* Classroom TouchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49AAFD2823914AA900082114 /* Build configuration list for PBXNativeTarget "Classroom TouchTests" */;
+			buildPhases = (
+				49AAFD1D23914AA900082114 /* Sources */,
+				49AAFD1E23914AA900082114 /* Frameworks */,
+				49AAFD1F23914AA900082114 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49AAFD2723914AA900082114 /* PBXTargetDependency */,
+			);
+			name = "Classroom TouchTests";
+			productName = "Classroom TouchTests";
+			productReference = 49AAFD2123914AA900082114 /* Classroom TouchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		49F3C8A32386D5700095BC6F /* Classroom Touch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49F3C8B42386D5710095BC6F /* Build configuration list for PBXNativeTarget "Classroom Touch" */;
@@ -95,10 +145,14 @@
 		49F3C89C2386D5700095BC6F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Zilverline;
 				TargetAttributes = {
+					49AAFD2023914AA900082114 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 49F3C8A32386D5700095BC6F;
+					};
 					49F3C8A32386D5700095BC6F = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -118,11 +172,19 @@
 			projectRoot = "";
 			targets = (
 				49F3C8A32386D5700095BC6F /* Classroom Touch */,
+				49AAFD2023914AA900082114 /* Classroom TouchTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		49AAFD1F23914AA900082114 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49F3C8A22386D5700095BC6F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,6 +197,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		49AAFD1D23914AA900082114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49AAFD2423914AA900082114 /* Classroom_TouchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49F3C8A02386D5700095BC6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,6 +218,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		49AAFD2723914AA900082114 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49F3C8A32386D5700095BC6F /* Classroom Touch */;
+			targetProxy = 49AAFD2623914AA900082114 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		49F3C8AD2386D5710095BC6F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -160,6 +238,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		49AAFD2923914AA900082114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6MWBEMLK39;
+				INFOPLIST_FILE = "Classroom TouchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zilverline.mac.Classroom-TouchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Classroom Touch.app/Contents/MacOS/Classroom Touch";
+			};
+			name = Debug;
+		};
+		49AAFD2A23914AA900082114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6MWBEMLK39;
+				INFOPLIST_FILE = "Classroom TouchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zilverline.mac.Classroom-TouchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Classroom Touch.app/Contents/MacOS/Classroom Touch";
+			};
+			name = Release;
+		};
 		49F3C8B22386D5710095BC6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -318,6 +438,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		49AAFD2823914AA900082114 /* Build configuration list for PBXNativeTarget "Classroom TouchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49AAFD2923914AA900082114 /* Debug */,
+				49AAFD2A23914AA900082114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		49F3C89F2386D5700095BC6F /* Build configuration list for PBXProject "Classroom Touch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

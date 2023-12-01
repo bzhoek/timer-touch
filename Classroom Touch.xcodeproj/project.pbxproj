@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49AAFD1C239143E000082114 /* SwipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AAFD1B239143E000082114 /* SwipView.swift */; };
+		49AAFD1C239143E000082114 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AAFD1B239143E000082114 /* SwipeView.swift */; };
 		49AAFD2423914AA900082114 /* Classroom_TouchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AAFD2323914AA900082114 /* Classroom_TouchTests.swift */; };
 		49F3C8A82386D5700095BC6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F3C8A72386D5700095BC6F /* AppDelegate.swift */; };
 		49F3C8AA2386D5700095BC6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F3C8A92386D5700095BC6F /* ViewController.swift */; };
@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		49AAFD1B239143E000082114 /* SwipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipView.swift; sourceTree = "<group>"; };
+		49AAFD1B239143E000082114 /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		49AAFD2123914AA900082114 /* Classroom TouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Classroom TouchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49AAFD2323914AA900082114 /* Classroom_TouchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classroom_TouchTests.swift; sourceTree = "<group>"; };
 		49AAFD2523914AA900082114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 				49F3C8B72386D96F0095BC6F /* WindowController.swift */,
 				49F3C8B02386D5710095BC6F /* Info.plist */,
 				49F3C8B12386D5710095BC6F /* Classroom_Touch.entitlements */,
-				49AAFD1B239143E000082114 /* SwipView.swift */,
+				49AAFD1B239143E000082114 /* SwipeView.swift */,
 			);
 			path = "Classroom Touch";
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 				49F3C8AA2386D5700095BC6F /* ViewController.swift in Sources */,
 				49F3C8B82386D96F0095BC6F /* WindowController.swift in Sources */,
 				49F3C8A82386D5700095BC6F /* AppDelegate.swift in Sources */,
-				49AAFD1C239143E000082114 /* SwipView.swift in Sources */,
+				49AAFD1C239143E000082114 /* SwipeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
